@@ -360,7 +360,7 @@ const BOOKS = [
   {id:20, file:'covers/20.jpg', title:'흥부와 놀부'},
 ];
 
-const TOTAL_TIME = 25;
+const TOTAL_TIME = 20;
 const NEED_CORRECT = 3;
 const NUM_QUESTIONS = 5;
 const PASS_LIMIT = 2;
@@ -552,7 +552,7 @@ function renderEnd(){
     const used = (TOTAL_TIME - state.timeLeft).toFixed(1);
     detail = `${used}초 만에 ${NEED_CORRECT}개를 맞혔어요.`;
   } else if(timeout){
-    detail = `25초 안에 ${NEED_CORRECT}개를 맞히지 못했어요. (${state.score}개 정답)`;
+    detail = `20초 안에 ${NEED_CORRECT}개를 맞히지 못했어요. (${state.score}개 정답)`;
   } else {
     detail = `${NUM_QUESTIONS}문제 중 ${state.score}개 정답. ${NEED_CORRECT}개를 맞혀야 성공이에요.`;
   }
